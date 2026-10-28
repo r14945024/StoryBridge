@@ -1,0 +1,17 @@
+file 'scene_01.png'
+duration 8
+file 'scene_02.png'
+duration 8
+file 'scene_03.png'
+duration 8
+file 'scene_04.png'
+duration 8
+file 'scene_05.png'
+duration 8
+file 'scene_06.png'
+duration 8
+file 'scene_07.png'
+duration 8
+file 'scene_08.png'
+duration 8
+file 'scene_08.png'

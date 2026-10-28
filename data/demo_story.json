@@ -1,0 +1,23 @@
+{
+ "id":"demo", "title":"消失的鑰匙｜互動觀影展示短片", "duration":64, "source":"hand_authored_demo", "description":"虛構情節與手動標記，示範角色換裝、劇情記憶與問答；非 AI 辨識結果。",
+ "characters":[
+  {"id":"C001","name":"小安","description":"短黑髮青年，前段穿灰色上衣，後段換上藍色外套；透過人工真值標註確認為同一角色。","first_seen":0},
+  {"id":"C002","name":"小晴","description":"深色長髮、黃色上衣的年輕女子。","first_seen":0}
+ ],
+ "events":[
+  {"id":"e01","t":1,"description":"傍晚的圖書館裡，小安穿灰色上衣站在桌子左側，小晴站在右側，桌上有一把金色鑰匙。","narration":"傍晚的圖書館，小安和小晴站在一張放有鑰匙的桌旁。","character_ids":["C001","C002"],"importance":2,"source":"human_demo"},
+  {"id":"e02","t":9,"description":"穿灰色上衣的小安把桌上的金色鑰匙拿起來，放到身後。","narration":"小安悄悄拿起桌上的金色鑰匙。","character_ids":["C001"],"importance":3,"source":"human_demo"},
+  {"id":"e03","t":17,"description":"小晴注意到桌上的金色鑰匙不見了，望向空空的桌面。","narration":"小晴發現鑰匙不見了，望著空桌面。","character_ids":["C002"],"importance":3,"source":"human_demo"},
+  {"id":"e04","t":25,"description":"小安換上藍色外套，獨自從圖書館外的走廊經過。人工標註確認他就是先前穿灰色上衣的小安。","narration":"換上藍色外套的小安，出現在走廊。","character_ids":["C001"],"importance":3,"source":"human_demo"},
+  {"id":"e05","t":33,"description":"穿藍色外套的小安把金色鑰匙放進外套口袋。","narration":"小安把金色鑰匙放進藍色外套的口袋。","character_ids":["C001"],"importance":3,"source":"human_demo"},
+  {"id":"e06","t":41,"description":"小晴追到走廊，指著小安藍色外套的口袋。","narration":"小晴追上小安，指向他的外套口袋。","character_ids":["C001","C002"],"importance":2,"source":"human_demo"},
+  {"id":"e07","t":49,"description":"小安從藍色外套口袋拿出金色鑰匙，交還給小晴。","narration":"小安從口袋拿出鑰匙，交還給小晴。","character_ids":["C001","C002"],"importance":3,"source":"human_demo"},
+  {"id":"e08","t":57,"description":"兩人回到圖書館，小晴把金色鑰匙放回木桌上。","narration":"兩人回到圖書館，小晴將鑰匙放回桌上。","character_ids":["C001","C002"],"importance":2,"source":"human_demo"}
+ ],
+ "qa":[
+  {"keywords":["拿走","偷走","拿了","誰拿","鑰匙是誰"],"available_at":9,"answer":"剛才是穿灰色上衣的小安拿走了桌上的金色鑰匙。"},
+  {"keywords":["換衣服","換裝","藍色外套","是不是同一","同一人"],"available_at":25,"answer":"是，走廊裡穿藍色外套的男子，就是之前穿灰色上衣的小安。這項身分是展示影片人工標註的真值。"},
+  {"keywords":["口袋","放在哪","藏在哪"],"available_at":33,"answer":"小安把金色鑰匙放進藍色外套的口袋。"},
+  {"keywords":["還給","交還","拿回"],"available_at":49,"answer":"小安已經把金色鑰匙交還給小晴。"}
+ ]
+}
